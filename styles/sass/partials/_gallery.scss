@@ -1,0 +1,20 @@
+@use "./variables";
+
+.gallery {
+    background: variables.$primary;
+
+    .galleryFlex {
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 0;
+        margin: 0;
+
+        li {
+            width: 30%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@use "./variables";
+
+.winTrip {
+    background-color: variables.$tertiary;
+
+    .winTripFlex {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 100px 0;
+
+        .winTripImg {
+            width: 30%;
+            background: variables.$secondary;
+
+            img {
+                width: 100%;
+                position: relative;
+                bottom: 20px;
+                left: 20px;
+            }
+        }
+
+        .winTripText {
+            width: 60%;
+            color: variables.$fontDark;
+            h3 {
+                text-transform: uppercase;
+            }
+        }
+    }
+}

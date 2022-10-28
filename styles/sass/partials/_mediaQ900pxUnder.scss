@@ -1,0 +1,178 @@
+@use "./variables";
+
+// HOME PAGE *******************************************
+
+
+
+
+// 900px and under
+@media (max-width: 900px) {
+    .wrapper {
+        width: 98%;
+    }
+
+    // HOME 
+
+    .mainHeader {
+
+    .headerContainer {
+
+    .hOneContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+
+        h1 {
+            color: variables.$fontYellow;
+            text-transform: uppercase;
+        }
+        span {
+            display: block;
+            }
+    }
+    
+    }
+
+    
+}
+
+    // ADDITIONAL SECTION
+    .additionalInfoSection {
+        .additionalFlex {
+
+            .imgHeaderContainer {
+        display: none;
+    }
+
+            .item {
+
+                .itemIcon {
+
+                    .iconify {
+                            width: 30px;
+                            height: 30px;
+                            margin: 5px 10px 0 0;
+                            padding: 5px;
+                     }
+                }
+            }
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            line-height: 50px;
+        }
+        p {
+            font-size: 0.9rem;
+        }
+    }
+
+      // BLOG PAGE *******************************************
+
+    // HEADER SECTION
+
+    // BLOG SECTION
+
+    .blog {
+        .nextDestination {
+
+        .nextDestinationFlex {
+        
+            .nextDestinationImg {
+                // width: 80%;
+
+                img {
+                    width: 110%;
+                }
+            }
+
+            .blogPost {
+                h2 {
+                    font-size: 1.9rem;
+                }
+            }
+        }  //End .nextDestinationFlex  
+        
+        .comments {
+             
+            .commentOne, .commentTwo {
+                width: 94%;
+
+            }
+        }
+        
+    } //End .nextDestination
+
+    .comments .txtcomentsContainer p {
+        font-size: 0.9rem;
+    }
+
+    // Blog Contact Form
+    form {
+        width: 93%;
+        font-size: 0.75rem;
+
+        button {
+            width: 50%;
+            font-size: 1rem;
+            align-self: center;
+        }
+    }
+
+
+    .ourMission {
+            .ourMissionTxt {
+                padding: 10px;
+            }
+            
+        }
+
+    } // End .blog
+
+    // CONTACT PAGE ***************************************************************************
+
+    .contact .wrapper {
+        width: 98%;
+        margin: 0 auto;
+    }
+
+    .contactFlex {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0;
+
+        .contactInfo {
+            width: 50%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .address {
+                text-align: center;
+            }
+        }
+    }
+
+    .contactForm {
+        width: 100%;
+        margin: 50px auto;
+        position: unset;
+        box-shadow: none;
+        
+        .wrapper {
+            width:98%;
+        }
+
+        button {
+            width: 50%;
+            margin: 50px auto 0;
+        }
+    } // End Contact Form and CONTACT PAGE***
+
+
+
+
+
+} //End media Query

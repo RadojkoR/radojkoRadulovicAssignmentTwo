@@ -1,0 +1,82 @@
+@use "./variables";
+
+.mainHeader {
+    background-image: url(../assets/home-header.jpg);
+    background-size: cover;
+    background-position: center top;
+    height: 90vh;
+    position: relative;
+
+    .headerContainer {
+    display: flex;
+    align-items: flex-end;
+
+    .hOneContainer {
+        width: 40%;
+        position: absolute;
+        bottom: 20px;
+
+        h1 {
+            color: variables.$fontYellow;
+            text-transform: uppercase;
+        }
+        span {
+            display: block;
+            }
+    }
+    
+    }
+
+   
+}
+
+// .mainContent {
+//     position: relative;
+    
+// }
+
+ 
+
+
+
+//  BLOG HEADER
+
+.blogHeader {
+    background-image: url(../assets/blog-header.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+
+     .hOneContainer {
+        width: 40%;
+        margin-top: 150px;
+
+        h1 {
+            color: variables.$fontLight;
+            text-transform: uppercase;
+        }
+        
+    }
+}
+
+// CONTACT HEADER 
+
+.contactHeader {
+    background-image: url(../assets/contact-header.jpg);
+    background-size: cover;
+    background-position: left;
+    height: 90vh;
+
+     .hOneContainer {
+        width: 90%;
+        margin-top: 150px;
+
+        h1 {
+            color: variables.$fontLight;
+            text-transform: uppercase;
+        }
+        
+    }
+}
+
+

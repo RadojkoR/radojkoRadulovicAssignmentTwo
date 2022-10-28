@@ -1,0 +1,200 @@
+@use "./variables";
+
+.blog {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .ourMission {
+        width: 30%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        background-color: variables.$primary;
+        margin-top: 150px;
+
+        .imgMission {
+            width: 130%;
+            align-self: flex-end;
+
+            img {
+                width: 100%;
+                position: relative;
+                right: 20px;
+                bottom: 20px;
+            }
+        }
+
+        .ourMissionTxt {
+            padding: 40px;
+            align-self: flex-start;
+
+            h4 {
+                font-size: 25px;
+                line-height: 58px;
+                letter-spacing: 0.8px;
+                color: variables.$fontYellow;
+            }
+            p {
+                color: variables.$fontLight;
+            }
+
+            ul {
+            list-style: disc;
+            margin-left: -20px;
+            li {
+               color: variables.$fontLight;
+            }
+
+        }
+
+        }
+
+        
+    }
+
+    .nextDestination {
+        width: 70%;
+        justify-self: flex-end;
+        margin: -200px -160px 50px;
+
+        .nextDestinationFlex {
+             border-right: 7px solid variables.$secondary;
+             border-bottom: 7px solid variables.$secondary;
+             border-top: 0;
+             margin-bottom: 100px;
+             overflow-x: hidden;
+        
+            .nextDestinationImg {
+                width: 93%;
+                max-width: 1115px;
+                background-color: variables.$secondary;
+
+                img {
+                    width: 110%;
+                    max-width: none;
+                    position: relative;
+                    left: 20px;
+                    bottom: 20px;
+                    margin-top: 20px;
+                }
+            }
+
+
+            .blogPost {
+                padding: 50px 0;
+                border-left: 7px solid variables.$secondary;
+
+                p {
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    // COMMENTS
+    .comments {
+            .commentOne {
+                margin-bottom: 100px;
+            h5 {
+                font-size: 30px;
+                padding: 30px 0;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: variables.$fontDark;
+                }
+            
+            
+        }
+
+        .commentTwo {
+            margin-bottom: 30px;
+        }
+
+        .comentsContainer {
+                width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;                   
+            }
+
+        .imgcomentsContainer {
+                        width: 20%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+        .txtcomentsContainer {
+                        width: 70%;
+                        
+                        p {
+                            margin: 0;
+
+                            &:first-child {
+                            color: variables.$fontDark;
+                            padding-bottom: 10px;
+                        }
+                        }                     
+                    }
+    }
+    
+
+    // CONTACT FORM
+    form {
+            display: flex;
+            flex-direction: column;
+            padding: 70px 0;
+
+            input, label {
+                    display: block;
+                }
+            
+            .rowOne {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+
+                input {
+                    width: 100%;
+                    border: none;
+                    border-bottom: 2px solid variables.$secondary;
+                    padding: 10px 20px 20px;
+                    margin: 20px 0;
+                    color: variables.$black;
+                    background-color: inherit;
+                }
+
+                .formName {
+                    width: 48%;
+
+                }
+                .formEmail {
+                    width: 48%;
+                }
+                
+
+                
+            }
+
+            textarea {
+                width: 100%;
+                border: none;
+                border: 2px solid variables.$secondary;
+                color: variables.$black;
+                background-color: inherit;
+                padding: 20px 20px;
+                margin: 20px 0;
+            }
+
+            button {
+                background-color: variables.$primary;
+                color: variables.$fontYellow;
+            }
+        }
+
+    
+    
+}

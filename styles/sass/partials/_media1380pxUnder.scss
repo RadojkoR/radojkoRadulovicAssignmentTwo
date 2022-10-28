@@ -1,0 +1,90 @@
+@use "./variables";
+
+
+// 1380px and under
+@media (max-width: 1380px) {
+
+    // HOME PAGE ****************************************************************************
+
+    // HEADER 
+
+
+    // ADDITIONAL SECTION
+    .additionalInfoSection {
+        .additionalFlex {
+            
+               .imgHeaderContainer {
+        min-width: 800px;
+        img {
+            width: 100%;
+        }
+    }
+
+
+            .item {
+
+                .itemIcon {
+
+                    .iconify {
+                            width: 45px;
+                            height: 45px;
+                     }
+                }
+            }
+        }
+        
+        h2 {
+            font-size: 1.9rem;
+        }
+    }
+
+    // WIN TRIP SECTION
+
+    .winTrip {
+
+        .winTripFlex {
+            align-items: center;
+        }
+    }
+
+    // eXTRA VACATION SECTION
+    .extraVacation {
+        .extraVacationTxt {
+        width: 85%;
+        }
+    }
+    
+    // BLOG PAGE **********************************************************************************
+
+    // HEADER SECTION
+
+    // BLOG SECTION
+
+    .blog {
+        .nextDestination {
+            margin: -200px -110px 50px;
+
+        .nextDestinationFlex {
+        
+            .nextDestinationImg {
+                width: 95%;
+
+                img {
+                    width: 110%;
+                }
+            }
+        }
+    }
+
+    }
+
+    // CONTACT PAGE ***************************************************************************
+
+    .contact {
+        .wrapper {
+            width:85%;
+        }
+    }
+    
+    
+ }

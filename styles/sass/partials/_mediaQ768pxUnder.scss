@@ -1,0 +1,243 @@
+@use "./variables";
+
+// HOME PAGE *******************************************
+
+// 768px and under
+@media (max-width: 768px) {
+
+    // ADDITIONAL SECTION
+    .additionalInfoSection {
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+
+        .additionalFlex {
+            flex-direction: column;
+            .item {
+                width: 100%;
+
+                .itemIcon {
+
+                    .iconify {
+                            width: 30px;
+                            height: 30px;
+                            margin: 5px 10px 0 0;
+                            padding: 5px;
+                     }
+                }
+            }
+        }
+    }
+
+     // SERVICES INFORMATION SECTION
+    .services {
+
+        .servicesFlex {
+            flex-direction: column;
+
+            .colLeft {
+                width: 100%;
+
+                .imgLeft {
+                    width: 100%;
+                    margin-top: 0;
+                    img {
+                        width: 100%;
+                        box-shadow: none;
+                    }
+                }
+
+                .textLeft {
+                    align-items: center;
+                    margin: 100px 0;
+                }
+
+            }
+
+            .colRight {
+                width: 100%;
+                flex-direction: column-reverse;
+
+                .imgContainer {
+                    width: 100%;
+                    margin-bottom: 0;
+                    img {
+                        box-shadow: none;
+                    }
+                }
+                .textRight {
+                    align-items: center;
+                    margin: 100px 0;
+                }
+            }
+
+
+
+            .textContainer {
+            margin: 60px 0 30px;
+
+            h3 {
+                font-size: 1.9rem;
+                line-height: 40px
+            }
+
+            
+        }
+
+        }
+
+        button {
+            margin-top: 10px;
+        }
+
+        
+    }
+
+    // EXTRA VACATION SECTION
+    .extraVacation {
+        .extraVacationTxt {
+        width: 98%;
+
+        h3 {
+            font-size: 1.6rem;
+            line-height: 50px;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+        }
+    }
+
+    // WIN TRIP SECTION
+
+    .winTrip {
+        .winTripFlex {
+            flex-direction: column;
+
+            .winTripImg {
+                width: 50%;
+            }
+
+            .winTripText {
+                width: 98%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h3 {
+                    text-align: center;
+                    margin-top: 20px;
+                }
+            }
+        }
+    } //End Win Trip
+
+       // BLOG PAGE *******************************************
+
+    // HEADER SECTION
+
+    // BLOG SECTION
+
+    .blog {
+        flex-direction: column;
+        width: 100%;
+        .nextDestination {
+            width: 100%;
+            margin: 0;
+
+        .nextDestinationFlex {
+             border: 7px solid variables.$secondary;
+             display: flex;
+             flex-direction: column-reverse;
+        
+            .nextDestinationImg {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    position: unset;
+                    margin: 0;
+                }
+            }
+
+            .blogPost {
+               border: none;
+               padding: 10px;
+                h2 {
+                    font-size: 1.7rem;
+                    line-height: 50px;
+                }
+            }
+        }  //End .nextDestinationFlex  
+        
+        .comments {
+             
+            .commentOne, .commentTwo {
+                width: 98%;
+                margin: 0 auto 50px;
+                padding: 10px;
+
+            }
+        }
+        
+    } //End .nextDestination
+
+    
+
+    // Blog Contact Form
+    form {
+        width: 98%;
+        margin: 0 auto ;
+        font-size: 0.75rem;
+
+        button {
+            width: 50%;
+            font-size: 1rem;
+            align-self: center;
+        }
+    }
+
+
+    .ourMission {
+        width: 100%;
+        margin-top: 0px;
+        flex-direction: column-reverse;
+            .imgMission {
+                width: 100%;
+                align-self: center;
+                img {
+                    position: unset;
+                }
+            }
+            .ourMissionTxt {
+                padding: 10px;
+                h4 {
+                    text-align: center;
+                }
+            }
+            
+        }
+
+    } // End .blog
+
+
+    // CONTACT PAGE ***************************************************************************
+
+    // HEADER
+    .contactHeader .hOneContainer h1 {
+        font-size: 3.5rem;
+        text-align: center;
+    } 
+
+    .contactFlex {
+
+        .contactInfo {
+            width: 80%;
+        }
+    }
+
+    
+
+} // End Media Query

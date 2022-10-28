@@ -1,0 +1,65 @@
+@use "./variables";
+
+// FONTS
+//@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&family=Roboto:wght@400;700&display=swap');
+
+//IMPORT FONTS FOR USE
+
+// IM Fell English FONT
+@font-face {
+    font-family: 'IM Fell English', serif;
+    src: url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1');
+    font-weight: normal;
+}
+
+// ROBOTO FONT BOLD
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?&family=Roboto:wght@400;700&display=swap');
+    font-weight: bold;
+}
+// ROBOTO FONT NORMAL
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?&family=Roboto:wght@400;700&display=swap');
+    font-weight: normal;
+}
+
+html {
+    font-size: 125%;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 28px;
+    letter-spacing: 1px;
+    font-family: variables.$bodyFont;
+    font-weight: normal;
+    background: variables.$tertiary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: variables.$headingFont;
+    font-weight: normal;
+    margin: 0;
+}
+
+h1 {
+    font-size: 79px;
+    line-height: 110px;
+}
+
+h2 {
+                font-size: 45px;
+                font-weight: normal;
+                line-height: 99.8px;
+                color: variables.$primary;
+                text-transform: uppercase;
+               }
+
+h3 {
+    font-size: 45px;
+    font-weight: normal;
+    line-height: 99.8px;
+}

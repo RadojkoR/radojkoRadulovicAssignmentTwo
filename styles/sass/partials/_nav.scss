@@ -1,0 +1,37 @@
+@use "./variables";
+
+.collapsibleMenu {
+    
+    z-index: 9;
+    .flexNav {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 60px;
+    li {
+        margin-right: 35px;
+
+        
+
+        a {
+            line-height: 29px;
+            letter-spacing: 1px;
+            color: variables.$tertiary;
+            padding: 10px;
+
+            &:first-child {
+            padding-left: 0;
+        }
+
+            &:hover, 
+            &:focus {
+                border-bottom: 3px solid variables.$secondary;
+                transition: all 0.2s ease;
+            }
+        }
+
+        .active {
+            border-bottom: 3px solid variables.$secondary;
+        }
+    }
+}
+}

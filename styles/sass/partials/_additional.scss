@@ -1,0 +1,47 @@
+@use "./variables";
+
+.additionalInfoSection {
+    background-color: variables.$tertiary;
+    padding-top: 250px;
+
+    .additionalFlex {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+
+        .imgHeaderContainer {
+        width: 70%; 
+        position: absolute;
+        right: -330px;
+        top: -750px;
+        flex: 0 1 1050px;
+        img {
+            width: 100%;
+        }
+    }
+
+        .item {
+            width: calc(50% - 20px);
+            margin: 20px 10px 10px 0;
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            
+            .itemIcon {
+                .iconify {
+                width: 50px;
+                height: 50px;
+                color: variables.$primary;
+                background: variables.$secondary;
+                border-radius: 50%;
+                margin: 20px 20px 0 0;
+                padding: 8px;
+            }
+            }  
+            
+        }
+
+    }
+}

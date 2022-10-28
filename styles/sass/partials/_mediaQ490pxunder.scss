@@ -1,0 +1,336 @@
+@use "./variables";
+
+// HOME PAGE *******************************************
+
+// 490px and under
+@media (max-width: 490px) {
+
+    // NAV 
+    .collapsibleMenu {
+    .flexNav {
+    padding-top: 40px;
+    li {
+        margin-right: 15px;
+        
+    }
+}
+}
+
+    // HOME 
+.mainHeader {
+    
+
+    .headerContainer {
+
+    .hOneContainer {
+
+        h1 {
+            font-size: 2.1rem;
+            line-height: 80px;
+        }
+    }
+    
+    }
+}
+
+
+    // ADDITIONAL SECTION
+    .additionalInfoSection {
+        padding-top: 60px;
+.wrapper {
+    width: 98%;
+    margin: 0 auto;
+}
+
+        .additionalFlex {
+            flex-direction: column;
+            .item {
+                width: 100%;
+
+                .itemIcon {
+
+                    .iconify {
+                            width: 25px;
+                            height: 25px;
+                            margin: 10px 10px 0 0;
+                            padding: 3px;
+                     }
+                }
+            }
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            line-height: 50px;
+        }
+        p {
+            font-size: 0.8rem;
+        }
+    }
+
+
+      // SERVICES INFORMATION SECTION
+    .services {
+        margin: 100px 0;
+
+        .servicesFlex {
+
+            .colLeft {
+
+                .textLeft {
+                    align-items: center;
+                    margin: 100px 0;
+
+                }
+
+            }
+
+            .colRight {
+                width: 100%;
+                flex-direction: column-reverse;
+
+                .imgContainer {
+                    width: 100%;
+                    margin-bottom: 0;
+                    img {
+                        box-shadow: none;
+                    }
+                }
+                .textRight {
+                    align-items: center;
+                    margin: 100px 0;
+                     
+                }
+            }
+
+
+
+            .textContainer {
+            margin: 0px 0 30px;
+         
+            h3 {
+                font-size: 1.55rem;
+            }
+           
+
+            p {
+                font-size: 0.8rem;
+            }
+
+            
+        }
+
+        }
+
+        button {
+            font-size: 1rem;
+        }       
+    }
+
+     // EXTRA VACATION SECTION
+    .extraVacation {
+        margin: 100px 0;
+        .extraVacationTxt {
+
+        h3 {
+            font-size: 1.4rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
+
+        button {
+            font-size: 1rem;
+        }
+        }
+    }
+
+    // WIN TRIP SECTION
+
+    .winTrip {
+        .winTripFlex {
+
+            .winTripImg {
+                width: 70%;
+            }
+
+            .winTripText {
+                width: 98%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h3 {
+                    font-size: 1.4rem;
+                    line-height: 50px;
+                }
+
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+            button {
+               font-size: 1rem;
+            }
+        }
+    }
+
+    // GALLERY
+
+    .gallery {
+
+        .galleryFlex {
+        flex-direction: column;
+        padding: 40px 0;
+
+        li {
+            width: 90%;
+            margin: 0 auto 30px;
+        }
+    }
+        
+    }
+
+    .galleryFlex {
+        flex-direction: column;
+
+        li {
+            width: 90%;
+        }
+    }
+
+     // BLOG PAGE *******************************************
+
+    // HEADER SECTION
+
+    // BLOG SECTION
+
+    .blog {
+        flex-direction: column;
+        width: 100%;
+        .nextDestination {
+            width: 100%;
+            margin: 0;
+
+        .nextDestinationFlex {
+             border: 7px solid variables.$secondary;
+             display: flex;
+             flex-direction: column-reverse;
+        
+            .nextDestinationImg {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    position: unset;
+                    margin: 0;
+                }
+            }
+
+            .blogPost {
+               border: none;
+               padding: 10px;
+               font-size: 0.8rem;
+                h2 {
+                    font-size: 1.7rem;
+                    line-height: 50px;
+                }
+            }
+        }  //End .nextDestinationFlex  
+        
+        .comments {
+             
+            .commentOne, .commentTwo {
+                width: 98%;
+                margin: 0 auto 50px;
+                padding: 10px;
+                font-size: 0.8rem;
+            }
+        }
+        
+    } //End .nextDestination
+
+    
+
+    // Blog Contact Form
+    form {
+        width: 98%;
+        margin: 0 auto ;
+        font-size: 0.75rem;
+
+        button {
+            width: 65%;
+            font-size: 1rem;
+            align-self: center;
+        }
+    }
+
+
+    .ourMission {
+        width: 100%;
+        margin-top: 0px;
+        flex-direction: column-reverse;
+            .imgMission {
+                width: 100%;
+                align-self: center;
+                img {
+                    position: unset;
+                }
+            }
+            .ourMissionTxt {
+                padding: 10px;
+                h4 {
+                    text-align: center;
+                }
+            }
+            
+        }
+
+    } // End .blog
+
+    // CONTACT PAGE ***************************************************************************
+
+    // HEADER 
+
+
+    .contactFlex {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0;
+
+        .contactInfo {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .addres {
+                text-align: center;
+            }
+        }
+    }
+
+    .contactForm {
+        
+        .wrapper {
+            width:98%;
+        }
+
+        button {
+            width: 50%;
+            margin: 50px auto 0;
+            font-size: 0.9rem;
+        }
+    } // End Contact Form and CONTACT PAGE***
+
+    // FOOTER 
+    footer {
+        p {
+            font-size: 0.7rem;
+        }
+    }
+
+
+} //End Media Query

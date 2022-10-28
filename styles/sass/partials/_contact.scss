@@ -1,0 +1,102 @@
+@use "./variables";
+
+.contact {
+    background-color: variables.$tertiary;
+
+}
+
+.contactFlex {
+        display: flex;
+        justify-content: space-between;
+
+        .contactInfo {
+            width: 30%;
+            margin: 100px 0;
+
+            .social {
+                width: 60%;
+                display: flex;
+                justify-content: space-between;
+                .iconify {
+                    font-size: 1.4rem;
+                    color: variables.$fontDark;;
+                }
+            }
+
+            .email {
+                padding: 20px 0;
+                a {
+                    margin: 0;
+                color: variables.$black;
+            }
+            } 
+
+            .address {
+                a {
+                    color: variables.$black;
+                }
+                p {
+                    margin: 0;
+                    padding: 5px 0;
+                }
+            }
+             
+        }
+    }
+
+    .contactForm {
+        width: 70%;
+        background-color: variables.$primary;
+        position: relative;
+        bottom: 150px;
+        left: 100px;
+        box-shadow: 20px 20px variables.$secondary;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 70px 0;
+
+            input, label {
+                    display: block;
+                }
+            
+            .rowOne {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+
+                input {
+                    width: 100%;
+                    border: none;
+                    border-bottom: 2px solid variables.$secondary;
+                    padding: 10px 20px 20px;
+                    margin: 20px 0;
+                    color: variables.$fontLight;
+                    background-color: inherit;
+                }
+
+                .formName {
+                    width: 48%;
+
+                }
+                .formEmail {
+                    width: 48%;
+                }
+                
+
+                
+            }
+
+            textarea {
+                width: 100%;
+                border: none;
+                border: 2px solid variables.$secondary;
+                color: variables.$fontLight;
+                background-color: inherit;
+                padding: 20px 20px;
+                margin: 20px 0;
+            }
+        }
+    }

@@ -1,0 +1,22 @@
+@use "./variables";
+
+.extraVacation {
+    background-color: variables.$tertiary;
+    margin: 150px 0;
+
+    .extraVacationTxt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 75%;
+        margin: 0 auto;
+        color: variables.$primary;
+        h3 {
+            
+            text-transform: uppercase;
+            text-align: center;
+            padding: 20px;
+        }
+        
+    }
+}

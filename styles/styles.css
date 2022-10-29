@@ -1645,23 +1645,20 @@ button {
   }
 }
 .hamburgerMenu {
-  display: none;
+  visibility: hidden;
 }
 
 @media (max-width: 768px) {
   .mainHeader .wrapper, .contactHeader .wrapper, .blogHeader .wrapper {
     width: 100%;
   }
-  .collapsibleMenu {
-    width: 100%;
-    background-color: rgba(40, 105, 148, 0.5490196078);
-  }
   .collapsibleMenu .menu {
     width: 40%;
   }
   .collapsibleMenu .menu .hamburgerMenu {
+    visibility: visible;
     width: 100%;
-    background-color: rgba(40, 105, 148, 0.5490196078);
+    background-color: rgba(13, 68, 127, 0.4666666667);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1706,8 +1703,8 @@ button {
     z-index: 10;
     margin: 0;
     padding-top: 100px;
-    -webkit-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
   }
   .collapsibleMenu .flexNav li a {
     line-height: 50px;
@@ -1715,8 +1712,8 @@ button {
   }
   .collapsibleMenu .showFlexNav {
     left: 0;
-    -webkit-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
   }
 }
 footer {

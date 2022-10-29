@@ -1,7 +1,7 @@
 @use "./variables";
 
 .hamburgerMenu{
-    display: none;
+    visibility: hidden;
 }
 
 @media (max-width: 768px) {
@@ -11,25 +11,19 @@
             width: 100%;
         }
     }
-
-    
-
     .collapsibleMenu {
-        width: 100%;
-        background-color: variables.$hamMenuBg;
 
         .menu {
             width: 40%;
             .hamburgerMenu{
+                        visibility: visible;
                         width: 100%;
-                        background-color: #2869948c;
+                        background-color: variables.$hamMenuBg;
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
                         color: variables.$secondary;
                         position: fixed;
-                        // top: 30px;
-                        // left: 50px;
                         cursor: pointer;
                         z-index: 11;
                         padding: 20px 0 20px 50px;
@@ -67,7 +61,7 @@
             z-index: 10;
             margin: 0;
             padding-top: 100px;
-            transition: all 0.2s ease-in;
+            transition: all 0.3s ease-in;
             li {
                 a {
                     line-height:50px;
@@ -78,7 +72,7 @@
 
         .showFlexNav {
             left: 0;
-            transition: all 0.2s ease-in;
+            transition: all 0.4s ease-in;
         }
 
     }

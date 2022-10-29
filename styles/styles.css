@@ -1649,10 +1649,19 @@ button {
 }
 
 @media (max-width: 768px) {
+  .mainHeader .wrapper, .contactHeader .wrapper, .blogHeader .wrapper {
+    width: 100%;
+  }
+  .collapsibleMenu {
+    width: 100%;
+    background-color: rgba(40, 105, 148, 0.5490196078);
+  }
   .collapsibleMenu .menu {
     width: 40%;
   }
   .collapsibleMenu .menu .hamburgerMenu {
+    width: 100%;
+    background-color: rgba(40, 105, 148, 0.5490196078);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1664,17 +1673,17 @@ button {
             align-items: center;
     color: #FDD908;
     position: fixed;
-    top: 30px;
-    left: 50px;
     cursor: pointer;
     z-index: 11;
+    padding: 20px 0 20px 50px;
   }
   .collapsibleMenu .menu .hamburgerMenu .fa-solid {
     font-size: 35px;
-    z-index: 11;
+    z-index: 12;
   }
   .collapsibleMenu .menu .hamburgerMenu .fa-x {
     color: #FDD908;
+    z-index: 12;
   }
   .collapsibleMenu .menu .hamburgerMenu p {
     font-size: 23px;

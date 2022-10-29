@@ -6,30 +6,42 @@
 
 @media (max-width: 768px) {
 
+    .mainHeader, .contactHeader, .blogHeader {
+        .wrapper {
+            width: 100%;
+        }
+    }
+
     
 
     .collapsibleMenu {
+        width: 100%;
+        background-color: variables.$hamMenuBg;
 
         .menu {
             width: 40%;
             .hamburgerMenu{
+                        width: 100%;
+                        background-color: #2869948c;
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
                         color: variables.$secondary;
                         position: fixed;
-                        top: 30px;
-                        left: 50px;
+                        // top: 30px;
+                        // left: 50px;
                         cursor: pointer;
                         z-index: 11;
+                        padding: 20px 0 20px 50px;
                         
                         .fa-solid {
                             font-size: 35px;
-                            z-index: 11;
+                            z-index: 12;
                         }
 
                         .fa-x {
                             color: variables.$secondary;
+                            z-index: 12;
                         }
 
                         p {

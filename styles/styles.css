@@ -412,7 +412,7 @@ button {
 }
 .blogHeader .hOneContainer {
   width: 40%;
-  margin-top: 150px;
+  padding-top: 150px;
 }
 .blogHeader .hOneContainer h1 {
   color: #EAFEFC;
@@ -422,12 +422,12 @@ button {
 .contactHeader {
   background-image: url(../assets/contact-header.jpg);
   background-size: cover;
-  background-position: left;
+  background-position: center;
   height: 90vh;
 }
 .contactHeader .hOneContainer {
   width: 90%;
-  margin-top: 150px;
+  padding-top: 150px;
 }
 .contactHeader .hOneContainer h1 {
   color: #EAFEFC;
@@ -1642,6 +1642,72 @@ button {
   }
   footer p {
     font-size: 0.7rem;
+  }
+}
+.hamburgerMenu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .collapsibleMenu .menu {
+    width: 40%;
+  }
+  .collapsibleMenu .menu .hamburgerMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #FDD908;
+    position: fixed;
+    top: 30px;
+    left: 50px;
+    cursor: pointer;
+    z-index: 11;
+  }
+  .collapsibleMenu .menu .hamburgerMenu .fa-solid {
+    font-size: 35px;
+    z-index: 11;
+  }
+  .collapsibleMenu .menu .hamburgerMenu .fa-x {
+    color: #FDD908;
+  }
+  .collapsibleMenu .menu .hamburgerMenu p {
+    font-size: 23px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-left: 20px;
+    color: #FFF;
+  }
+  .collapsibleMenu .flexNav {
+    background-color: #0D457F;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    top: 0px;
+    left: -400px;
+    width: 50%;
+    height: 100vh;
+    z-index: 10;
+    margin: 0;
+    padding-top: 100px;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  .collapsibleMenu .flexNav li a {
+    line-height: 50px;
+    color: #FDD908;
+  }
+  .collapsibleMenu .showFlexNav {
+    left: 0;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
   }
 }
 footer {

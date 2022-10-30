@@ -116,10 +116,11 @@
                 <!-- COMMENTS -->
                 <article class="comments">
                     <div class="wrapper">
-                        <!-- <div class="comentsFlex"> -->
+                        <div class="comentsFlex">
                             <!-- COMENT ONE -->
-                            <div class="commentOne">
-                                <h5>Coments:</h5>
+                            
+                            <div class="commentOne comment">
+                                <h5>Comments:</h5>
                                 <div class="comentsContainer">
                                     <div class="imgcomentsContainer">
                                         <img src="./assets/comment-1.jpg" alt="Ali's picture">
@@ -133,7 +134,7 @@
                             </div>
 
                             <!-- COMENT TWO-->
-                            <div class="commentTwo">
+                            <div class="commentTwo comment">
                                 <div class="comentsContainer">
                                     <div class="imgcomentsContainer">
                                         <img src="./assets/comment-2.jpg" alt="Lisa's picture">
@@ -146,7 +147,7 @@
 
                             </div>
 
-                        <!-- </div>End .commentsFlex -->
+                        </div> <!--End .commentsFlex-->
 
                         <!-- CONTACT FORM -->
                          <form action="#" method="post">
@@ -155,14 +156,14 @@
                                  <!-- NAME -->
                                  <div class="formName">
                                      <label for="name"></label>
-                                     <input type="text" id="name" name="name" placeholder="Name" onfocus="this.value=''">
+                                     <input type="text" id="name" name="name" placeholder="Name">
                                  </div>
                                  <!--End .formName-->
 
                                  <!-- EMAIL -->
                                  <div class="formEmail">
                                      <label for="email"></label>
-                                     <input type="email" id="email" name="email" placeholder="Email address" required onfocus="this.value=''">
+                                     <input type="email" id="email" name="email" placeholder="Email address">
                                  </div>
                                  <!--End .formEmail-->
 
@@ -170,7 +171,8 @@
                              <!--End .rowOne-->
 
                              <label for="message"></label>
-                             <textarea name="message" id="message" cols="30" rows="6" placeholder="Message" onfocus="this.value=''"
+                             <textarea name="message" id="message" cols="30" rows="6" maxlength="100"
+                                 placeholder="Message"
                                  ></textarea>
 
                              <button type="submit">Post comment</button>

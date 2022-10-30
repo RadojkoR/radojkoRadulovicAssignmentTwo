@@ -767,6 +767,9 @@ button {
 .blog .comments .commentTwo {
   margin-bottom: 30px;
 }
+.blog .comments .commentThree {
+  margin-bottom: 30px;
+}
 .blog .comments .comentsContainer {
   width: 100%;
   display: -webkit-box;
